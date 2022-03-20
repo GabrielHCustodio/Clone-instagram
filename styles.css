@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Imagens */
+.container .container-img {
+    width: 53%;
+}
+
+.container .container-img .background-img {
+    display: flex;
+    justify-content: right;
+    padding-top: 30px;
+}
+
+.container .container-img .background-img #bg{
+    width: 470px;
+    z-index: 10;
+    position: relative;
+}
+
+/* Formulário */
+.container-form {
+    width: 47%;
+    margin-top: 55px;
+}
+
+.container-form .form {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form .form #logo {
+    text-align: center;
+    margin: 22px auto 35px;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.container-form .form input {
+    width: 300px;
+    height: 35px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.container-form .form input[type=submit] {
+    margin-top: 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(70, 70, 255);
+}
+
+.container-form .form #or {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.container-form .form .face {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.container-form .form .face img {
+    width: 25px;
+}
+
+.container-form .form .face p {
+    color: rgb(34, 34, 175);
+    font-size: 1rem;
+}
+
+.container-form .form a {
+    margin: 15px 0 25px 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+}
