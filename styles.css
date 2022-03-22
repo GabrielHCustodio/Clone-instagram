@@ -31,12 +31,35 @@ body {
     display: flex;
     justify-content: right;
     padding-top: 30px;
+    position: relative;
 }
 
 .container .container-img .background-img #bg{
     width: 470px;
+    position: absolute;
     z-index: 10;
-    position: relative;
+}
+
+.container .container-img .background-img .images {
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+}
+
+.container .container-img .background-img .images .transition {
+    width: 250px;
+    height: 539px;
+    margin-top: 28px;
+    margin-left: 359px;
+    transition: opacity 1.5s ease-out;
+}
+
+.container .container-img .background-img .images .on {
+    display: inline-block;
+}
+
+.container .container-img .background-img .images .off {
+    display: none;
 }
 
 /* Formulário */
@@ -69,6 +92,7 @@ body {
     padding-left: 10px;
     background-color: rgb(245, 245, 245);
     border: 1px solid rgb(235, 235, 235);
+    outline: none;
 }
 
 .container-form .form input[type=submit] {
@@ -76,6 +100,11 @@ body {
     border-radius: 5px;
     color: white;
     background-color: rgb(70, 70, 255);
+    cursor: pointer;
+}
+
+.container-form .form input[type=submit]:hover {
+    opacity: 0.8;
 }
 
 .container-form .form #or {
@@ -88,6 +117,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .container-form .form .face img {
@@ -155,7 +185,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .footer .sobre {
@@ -179,7 +209,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 80px;
     font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.8);
@@ -187,7 +217,7 @@ body {
 
 .language #list {
     border: none;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: rgba(0, 0, 0, 0.8);
     margin-right: 20px;
 }
