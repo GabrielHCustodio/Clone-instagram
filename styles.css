@@ -8,6 +8,13 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -97,4 +104,90 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.container-form .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 350px;
+    height: 60px;
+    border: 1px solid #ccc;
+}
+
+.container-form .register p {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container-form .register b {
+    font-size: 1.1rem;
+    color: rgba(62, 62, 253, 0.7);
+    cursor: pointer;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.redes p {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.redes .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.redes .link .logo {
+    width: 140px;
+    margin-left: 10px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.footer .sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.footer .sobre li {
+    margin-right: 20px;
+    margin-top: 15px;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.85rem;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.language #list {
+    border: none;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 20px;
 }
