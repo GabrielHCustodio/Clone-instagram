@@ -22,7 +22,7 @@ body {
     flex-direction: row;
 }
 
-/* Imagens */
+/* Images */
 .container .container-img {
     width: 53%;
 }
@@ -41,28 +41,27 @@ body {
 }
 
 .container .container-img .background-img .images {
-    width: 100%;
-    position: absolute;
-    z-index: 11;
-}
-
-.container .container-img .background-img .images .transition {
+    background-size: cover;
+    animation-name: transition;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     width: 250px;
     height: 539px;
+    position: absolute;
+    z-index: 11;
     margin-top: 28px;
-    margin-left: 359px;
-    transition: opacity 1.5s ease-out;
+    margin-right: 60px;
 }
 
-.container .container-img .background-img .images .on {
-    display: inline-block;
+@keyframes transition {
+    0% { background-image: url(./assets/image1.png); }
+    33% { background-image: url(./assets/image2.png); }
+    66% { background-image: url(./assets/image3.png); }
+    100% {background-image: url(./assets/image4.png); }
 }
 
-.container .container-img .background-img .images .off {
-    display: none;
-}
-
-/* Formulário */
+/* Form */
 .container-form {
     width: 47%;
     margin-top: 55px;
@@ -86,7 +85,8 @@ body {
 }
 
 .container-form .form input {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 35px;
     margin-bottom: 7px;
     padding-left: 10px;
@@ -220,4 +220,30 @@ body {
     font-size: 0.75rem;
     color: rgba(0, 0, 0, 0.8);
     margin-right: 20px;
+}
+
+/* Response*/
+
+@media screen and (max-width: 810px) {
+    .container .container-img {
+        display: none;
+    }
+
+    .container .container-form {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .container-form .form {
+        border: 1px solid #ccc;
+        margin: 0 auto;
+    }
+    
+    .container-form .register {
+        margin: 20px auto;
+    }
+
+    .container-form .redes{
+        margin: 20px auto;
+    }
 }
